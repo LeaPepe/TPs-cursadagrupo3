@@ -14,9 +14,9 @@
 bool_t isNumber(char *str){
     
     bool_t condition = true ;
-    unsigned int index = 0 ;
+   // unsigned int index = 0 ;
 
-    if( isdigit(str[index]) == 0 )   // no es un numero ??
+/*    if( isdigit(str[index]) == 0 )   // no es un numero ??
     {
     	if( str[index]!='-' ) { return false ;}        // no es el signo negativo ?
     }
@@ -26,7 +26,9 @@ bool_t isNumber(char *str){
         {
             if( str[index]!='.' ){ condition=false ; break ;}
         }
-    }
+    } */
+    if( atof(str)==0){ condition = false;}
+   
 
     return condition ;
 }
