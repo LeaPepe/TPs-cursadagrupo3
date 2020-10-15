@@ -1,23 +1,5 @@
-#include <stdio.h>
-#include "../inc/pila.h"
-//#include "../inc/validation.h"
-/*
+#include "pila.h"
 
-// lista enlazada :
-typedef struct nodo{
-	float value ;
-	struct nodo* next;
-}Nodo;
-
-// pila :
-typedef struct pila{
-	Nodo *first;
-	unsigned int size;  // saber la cantidad de nodos
-}Pila ;
-*/
-// booleano ;
-//typedef enum{false,true}bool_t;
-//  build node 
 
 Node* buildNode(float  value){
 	Node *node = (Node *)malloc(sizeof(Node)) ;
@@ -27,14 +9,14 @@ Node* buildNode(float  value){
 }
 
 // destruct node
-bool_t destructNode(Node *node){
+bool destructNode(Node *node){
 	node->next = NULL;
 	free(node) ;
 	return true;
 }
 
 //to push 
-bool_t push(Pila *pila, float value){
+bool push(Pila *pila, float value){
 	Node *node = buildNode(value);
 	node->next = pila->first ; 	// apilo
 	pila->first = node ;       	// puntero al ultimo
@@ -43,7 +25,7 @@ bool_t push(Pila *pila, float value){
 }
 
 //to pop - eliminar un nodo -
-bool_t pop(Pila *pila){
+bool pop(Pila *pila){
 	if(pila->first !=NULL){
 		Node *freeNode = pila->first ;  // desengancho el nodo a eliminar
 		pila->first = pila->first->next ; // apunto al siguiente

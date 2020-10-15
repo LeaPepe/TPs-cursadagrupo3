@@ -2,13 +2,17 @@
 #ifndef __VALIDATION__
 #define __VALIDATION__
 
+#include <string.h>
+#include <ctype.h>
 #include <stdio.h>
+#include <stdbool.h>
 #include <stdlib.h>
 
-typedef enum{false,true}bool_t ;
+#define MENU_OPTION_SUM "sum"
+#define MENU_OPTION_PRODUCT "prod"
 
-bool_t isNumber(char *str);
-bool_t isAlphabet(char *str);
-bool_t isOption(char *str);
+bool isNumber(char*);
+bool isAlphabet(char*);
+bool isOption(char*);
 
 #endif
