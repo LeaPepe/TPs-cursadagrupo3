@@ -3,7 +3,7 @@ GeneratorModel for yakindu::c {
 	statechart blink {
 
 		feature Outlet {
-			targetProject = "basic-firmware-educiaa"
+			targetProject = "TPs-cursadagrupo3"
 			targetFolder = "projects/yakindu-project/gen"
 			libraryTargetFolder = "projects/yakindu-project/inc"
 		}

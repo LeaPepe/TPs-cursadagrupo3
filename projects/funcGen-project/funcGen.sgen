@@ -1,0 +1,11 @@
+GeneratorModel for yakindu::c {
+
+	statechart funcGen {
+
+		feature Outlet {
+			targetProject = "TPs-cursadagrupo3"
+			targetFolder = "projects/funcGen-project/gen"
+			libraryTargetFolder = "projects/funcGen-project/inc"
+		}
+	}
+}

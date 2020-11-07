@@ -1,0 +1,11 @@
+GeneratorModel for yakindu::c {
+
+	statechart slideDoor {
+
+		feature Outlet {
+			targetProject = "TPs-cursadagrupo3"
+			targetFolder = "projects/slideDoor-project/gen"
+			libraryTargetFolder = "projects/slideDoor-project/inc"
+		}
+	}
+}
