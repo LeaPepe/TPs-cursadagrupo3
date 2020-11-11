@@ -12,19 +12,15 @@ TimerTicks ticks[NOF_TIMERS];
 
 // state machine user-defined external functions (action)
 void funcGenIface_opAddV(const FuncGen* handle){
-	Board_LED_Set(LED1, TRUE);
 	Board_LED_Set(LED3, !Board_LED_Test(LED3)); // swap state
 }
 void funcGenIface_opSubV(const FuncGen* handle){
-	Board_LED_Set(LED1, TRUE);
 	Board_LED_Set(LED2, !Board_LED_Test(LED2)); // swap state
 }
 void funcGenIface_opAddF(const FuncGen* handle){
-	Board_LED_Set(LED1, FALSE);
 	Board_LED_Set(LED3, !Board_LED_Test(LED3)); // swap state
 }
 void funcGenIface_opSubF(const FuncGen* handle){
-	Board_LED_Set(LED1, FALSE);
 	Board_LED_Set(LED2, !Board_LED_Test(LED2)); // swap state
 }
 void funcGenIface_opSetForm(const FuncGen* handle, const sc_integer form){
@@ -47,6 +43,10 @@ void funcGenIface_opSetForm(const FuncGen* handle, const sc_integer form){
 	    	break;
 	      // default statements
 	}
+}
+
+void funcGenIface_opSetMode(const FuncGen* handle, const sc_boolean mode){
+	Board_LED_Set(LED1, mode);
 }
 
 // Scan for all buttons

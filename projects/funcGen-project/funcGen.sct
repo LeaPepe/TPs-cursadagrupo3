@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sgraph="http://www.yakindu.org/sct/sgraph/2.0.0">
-  <sgraph:Statechart xmi:id="_UrWZwBlgEeuAnORvtb8-Hg" specification="&#xA;interface:&#xA;&#xA;operation opAddV():void&#xA;operation opSubV():void&#xA;operation opAddF():void&#xA;operation opSubF():void&#xA;operation opSetForm(form:integer):void&#xA;in event evTecNotPressed&#xA;in event evTecPressed: integer&#xA;&#xA;const OPT_SQR: integer = 0&#xA;const OPT_SIN: integer = 1&#xA;const OPT_TRI: integer = 2&#xA;&#xA;const OPT_V: boolean = true&#xA;const OPT_F: boolean = false&#xA;&#xA;const TEC1: integer = 1 &lt;&lt; 0&#xA;const TEC2: integer = 1 &lt;&lt; 1&#xA;const TEC3: integer = 1 &lt;&lt; 2&#xA;const TEC4: integer = 1 &lt;&lt; 3&#xA;&#xA;internal:&#xA;&#xA;event evUp&#xA;event evDown&#xA;event evForm&#xA;event evMode&#xA;&#xA;var optMode:boolean&#xA;event siTecOK&#xA;var viTec: integer" name="funcGen">
+  <sgraph:Statechart xmi:id="_UrWZwBlgEeuAnORvtb8-Hg" specification="&#xA;interface:&#xA;&#xA;operation opAddV():void&#xA;operation opSubV():void&#xA;operation opAddF():void&#xA;operation opSubF():void&#xA;operation opSetForm(form:integer):void&#xA;operation opSetMode(mode:boolean):void&#xA;in event evTecNotPressed&#xA;in event evTecPressed: integer&#xA;&#xA;const OPT_SQR: integer = 0&#xA;const OPT_SIN: integer = 1&#xA;const OPT_TRI: integer = 2&#xA;&#xA;const OPT_V: boolean = true&#xA;const OPT_F: boolean = false&#xA;&#xA;const TEC1: integer = 1 &lt;&lt; 0&#xA;const TEC2: integer = 1 &lt;&lt; 1&#xA;const TEC3: integer = 1 &lt;&lt; 2&#xA;const TEC4: integer = 1 &lt;&lt; 3&#xA;&#xA;internal:&#xA;&#xA;event evUp&#xA;event evDown&#xA;event evForm&#xA;event evMode&#xA;&#xA;var optMode:boolean&#xA;event siTecOK&#xA;var viTec: integer" name="funcGen">
     <regions xmi:id="_kPFcQBpDEeuwg4yugdDDvA" name="TEC">
       <vertices xsi:type="sgraph:State" xmi:id="_kPFcQRpDEeuwg4yugdDDvA" specification="" name="DEBOUNCE" incomingTransitions="_kPFcShpDEeuwg4yugdDDvA">
         <outgoingTransitions xmi:id="_kPFcQxpDEeuwg4yugdDDvA" specification="after 100 ms" target="_kPGDYRpDEeuwg4yugdDDvA"/>
@@ -31,12 +31,12 @@
       </vertices>
     </regions>
     <regions xmi:id="_XCURIBlgEeuAnORvtb8-Hg" name="control region">
-      <vertices xsi:type="sgraph:State" xmi:id="_XCURIRlgEeuAnORvtb8-Hg" specification="entry / optMode = OPT_V" name="VOLTAGE" incomingTransitions="_XCWGXhlgEeuAnORvtb8-Hg _XCU4NBlgEeuAnORvtb8-Hg _XCVfRRlgEeuAnORvtb8-Hg _XCXUdxlgEeuAnORvtb8-Hg">
+      <vertices xsi:type="sgraph:State" xmi:id="_XCURIRlgEeuAnORvtb8-Hg" specification="entry / optMode = OPT_V;&#xD;&#xA;opSetMode(OPT_V)" name="VOLTAGE" incomingTransitions="_XCWGXhlgEeuAnORvtb8-Hg _XCU4NBlgEeuAnORvtb8-Hg _XCVfRRlgEeuAnORvtb8-Hg _XCXUdxlgEeuAnORvtb8-Hg">
         <outgoingTransitions xmi:id="_XCU4MBlgEeuAnORvtb8-Hg" specification="evMode" target="_XCWGVRlgEeuAnORvtb8-Hg"/>
         <outgoingTransitions xmi:id="_XCU4NBlgEeuAnORvtb8-Hg" specification="evDown / opSubV()" target="_XCURIRlgEeuAnORvtb8-Hg"/>
         <outgoingTransitions xmi:id="_XCVfRRlgEeuAnORvtb8-Hg" specification="evUp / opAddV()" target="_XCURIRlgEeuAnORvtb8-Hg"/>
       </vertices>
-      <vertices xsi:type="sgraph:State" xmi:id="_XCWGVRlgEeuAnORvtb8-Hg" specification="entry / optMode = OPT_F" name="FREQUENCY" incomingTransitions="_XCU4MBlgEeuAnORvtb8-Hg _XCWtYxlgEeuAnORvtb8-Hg _XCXUcBlgEeuAnORvtb8-Hg">
+      <vertices xsi:type="sgraph:State" xmi:id="_XCWGVRlgEeuAnORvtb8-Hg" specification="entry / optMode = OPT_F;&#xD;&#xA;opSetMode(OPT_F)" name="FREQUENCY" incomingTransitions="_XCU4MBlgEeuAnORvtb8-Hg _XCWtYxlgEeuAnORvtb8-Hg _XCXUcBlgEeuAnORvtb8-Hg">
         <outgoingTransitions xmi:id="_XCWGXhlgEeuAnORvtb8-Hg" specification="evMode" target="_XCURIRlgEeuAnORvtb8-Hg"/>
         <outgoingTransitions xmi:id="_XCWtYxlgEeuAnORvtb8-Hg" specification="evUp / opAddF()" target="_XCWGVRlgEeuAnORvtb8-Hg"/>
         <outgoingTransitions xmi:id="_XCXUcBlgEeuAnORvtb8-Hg" specification="evDown / opSubF()" target="_XCWGVRlgEeuAnORvtb8-Hg"/>
