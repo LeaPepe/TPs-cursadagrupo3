@@ -11,10 +11,10 @@ Al compilarse el proyecto, se genera automáticamente un directorio `out` en la 
 ## generador de funciones (funcGen)
 
 Tablero e interfaz de usuario para el generador de funciones.
--Led RGB: Forma. R=Sin,G=Sqr,B=Tri
--Led1: Modo. ON = Tension, OFF = Frecuencia
--Led2,3: Up/Down. Swap de estado indica evento.
+- Led RGB: Forma. R=Sin,G=Sqr,B=Tri
+- Led1: Modo. ON = Tension, OFF = Frecuencia
+- Led2,3: Up/Down. Swap de estado indica evento.
 
--Tec1: Cambio de forma.
--Tec2: Cambio de modo.
--Tec3,4: Up/Down.
+- Tec1: Cambio de forma.
+- Tec2: Cambio de modo.
+- Tec3,4: Up/Down.
