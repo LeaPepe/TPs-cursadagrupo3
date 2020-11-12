@@ -1,4 +1,4 @@
 
 
 PROGRAM_PATH = projects
-PROGRAM_NAME = slideDoor-project
+PROGRAM_NAME = mecStair-project

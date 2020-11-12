@@ -60,4 +60,18 @@ Control de una puerta de garage comandado por un control remoto de un solo boton
 
 
 ## Escalera mecanica (mecStair)
-todo
+Escalera mecanica bidireccional automatica. Cuando detecta una presion en la placa, se enciende para el lado correspondiente por un tiempo estipulado (previamente calculado para que la persona llegue al destino). Si se presiona nuevamente la placa, se reinicia el contador.
+
+Existen varias formas de encarar esta escalera (contador de personas seria otra forma), pero esta fue la que me parecio mas simple y acorde.
+
+### Entradas
+- Tec1: Presion abajo
+- Tec2: Presion arriba
+- Tec3: -
+- Tec4: -
+
+### Salidas
+- Led RGB: -
+- Led1: -
+- Led2: Direccion del motor. ON = Abriendo, OFF = Cerrando. 
+- Led3: Estado del motor. ON = encendido, OFF = Apagado

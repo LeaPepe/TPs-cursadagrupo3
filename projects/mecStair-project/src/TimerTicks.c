@@ -39,7 +39,7 @@
 /** \addtogroup statechart Simple UML Statechart example.
  ** @{ */
 
-#include "FuncGen.h"
+#include "MecStair.h"
 #include "TimerTicks.h"
 
 
