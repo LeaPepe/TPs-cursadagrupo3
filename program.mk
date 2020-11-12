@@ -1,4 +1,4 @@
 
 
 PROGRAM_PATH = projects
-PROGRAM_NAME = garage-project
+PROGRAM_NAME = slideDoor-project

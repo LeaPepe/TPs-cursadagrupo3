@@ -13,10 +13,12 @@ TimerTicks ticks[NOF_TIMERS];
 
 
 // state machine user-defined external functions (action)
-
-
-
-
+void slideDoorIface_opSetMotorSt(const SlideDoor* handle, const sc_boolean state){
+	Board_LED_Set(LED3, state);
+}
+void slideDoorIface_opSetMotorDir(const SlideDoor* handle, const sc_boolean dir){
+	Board_LED_Set(LED2, dir);
+}
 
 
 // Scan for all buttons
