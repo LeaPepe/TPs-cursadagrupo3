@@ -39,7 +39,7 @@
 /** \addtogroup statechart Simple UML Statechart example.
  ** @{ */
 
-#include "Blink.h"
+#include "MicroWave.h"
 #include "TimerTicks.h"
 
 

@@ -74,4 +74,20 @@ Existen varias formas de encarar esta escalera (contador de personas seria otra 
 - Led RGB: -
 - Led1: -
 - Led2: Direccion del motor. ON = Abriendo, OFF = Cerrando. 
-- Led3: Estado del motor. ON = encendido, OFF = Apagado
+- Led3: Estado del motor. ON = encendido, OFF = Apagado. 
+
+## Microondas (microWave)
+
+Control de microondas. Posibilidad de elegir 3 tipos de tiempos (1,2,3 segundos). Boton de start/stop para encender o detener el microondas. Si la puerta esta abierta, el microondas no enciende.
+
+### Entradas
+- Tec1: Start / Stop
+- Tec2: Detector de puerta abierta
+- Tec3: -
+- Tec4: -
+
+### Salidas
+- Led RGB: Modo de coccion. R=Pequeno, G=Mediano, B=Granade.
+- Led1: Estado del generador de microondas
+- Led2: -
+- Led3: -

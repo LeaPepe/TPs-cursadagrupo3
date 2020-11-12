@@ -1,4 +1,4 @@
 
 
 PROGRAM_PATH = projects
-PROGRAM_NAME = mecStair-project
+PROGRAM_NAME = microWave-project

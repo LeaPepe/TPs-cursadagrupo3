@@ -1,0 +1,11 @@
+GeneratorModel for yakindu::c {
+
+	statechart microWave {
+
+		feature Outlet {
+			targetProject = "TPs-cursadagrupo3"
+			targetFolder = "projects/microWave-project/gen"
+			libraryTargetFolder = "projects/microWave-project/inc"
+		}
+	}
+}
