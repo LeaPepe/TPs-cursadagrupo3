@@ -10,20 +10,34 @@ Al compilarse el proyecto, se genera automáticamente un directorio `out` en la 
 
 ## Generador de funciones (funcGen)
 
-Tablero e interfaz de usuario para el generador de funciones.
-- Led RGB: Forma. R=Sin, G=Sqr, B=Tri.
-- Led1: Modo. ON = Tension, OFF = Frecuencia.
-- Led2,3: Up/Down. Swap de estado indica evento.
+Tablero e interfaz de usuario para un generador de funciones. Posee un boton para cambiar la forma de la onda, un boton para seleccionar el modo de modificacion (frecuencia o tension), y 2 botones que suben o bajan la propiedad seleccionada.
+
+- Led RGB: Forma de onda. R=Sin, G=Sqr, B=Tri.
+- Led1: Modo de los botones up/down. ON = Tension, OFF = Frecuencia.
+- Led2: Up. Subir F/V dependiendo del modo. Swap de estado indica evento.
+- Led3: Down. Bajar F/V dependiendo del modo. Swap de estado indica evento.
 
 - Tec1: Cambio de forma.
 - Tec2: Cambio de modo.
-- Tec3,4: Up/Down.
+- Tec3: Up.
+- Tec4: Down.
 
 ## Puerta corrediza (slideDoor)
 todo
 
 ## Puerta de garage (garage)
-todo
+
+Control de una puerta de garage comandado por un control remoto de un solo boton. Si se pulsa al estar cerrado se abre, si se pulsa al estar abierto se cierra, si se pulsa en movimiento cambia de sentido (con una espera intermedia para realizar la inversion). Si la puerta esta abierta, parpadea una luz en la vereda indicando precaucion.
+ 
+- Led RGB: -
+- Led1: Luz de la vereda. Titla si el porton esta abierto.
+- Led2: Direccion del motor. ON = Abriendo, OFF = Cerrando. 
+- Led3: Estado del motor. ON = encendido, OFF = Apagado
+
+- Tec1: Presencia de vehiculo debajo del garage.
+- Tec2: Control Remoto.
+- Tec3: Final de carrera cerrado.
+- Tec4: Final de carrera abierto.
 
 ## Escalera mecanica (mecStair)
 todo

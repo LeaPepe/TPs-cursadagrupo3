@@ -10,6 +10,8 @@ static FuncGen statechart;
 // Timer ticks
 TimerTicks ticks[NOF_TIMERS];
 
+
+
 // state machine user-defined external functions (action)
 void funcGenIface_opAddV(const FuncGen* handle){
 	Board_LED_Set(LED3, !Board_LED_Test(LED3)); // swap state
@@ -48,6 +50,10 @@ void funcGenIface_opSetForm(const FuncGen* handle, const sc_integer form){
 void funcGenIface_opSetMode(const FuncGen* handle, const sc_boolean mode){
 	Board_LED_Set(LED1, mode);
 }
+
+
+
+
 
 // Scan for all buttons
 uint32_t Buttons_GetStatus_(void) {
