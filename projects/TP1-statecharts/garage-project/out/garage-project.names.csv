@@ -1,0 +1,266 @@
+projects/garage-project/out/garage-project.elf:1a000300 0000001e t clearInEvents
+projects/garage-project/out/garage-project.elf:1a00031e 0000000a t enact_TEC_PRESSED
+projects/garage-project/out/garage-project.elf:1a000328 0000000a t enseq_TEC_UNPRESSED_default
+projects/garage-project/out/garage-project.elf:1a000332 00000012 t enseq_TEC_PRESSED_default
+projects/garage-project/out/garage-project.elf:1a000344 0000000a t enseq_TEC_VALIDATION_default
+projects/garage-project/out/garage-project.elf:1a00034e 0000000a t enseq_main_region_WAIT_default
+projects/garage-project/out/garage-project.elf:1a000358 00000008 t exseq_TEC_UNPRESSED
+projects/garage-project/out/garage-project.elf:1a000360 00000008 t exseq_TEC_PRESSED
+projects/garage-project/out/garage-project.elf:1a000368 00000008 t exseq_TEC_VALIDATION
+projects/garage-project/out/garage-project.elf:1a000370 0000000a t exseq_main_region_WAIT
+projects/garage-project/out/garage-project.elf:1a00037a 0000000a t exseq_door_OPENED
+projects/garage-project/out/garage-project.elf:1a000384 0000000a t exseq_door_CLOSED
+projects/garage-project/out/garage-project.elf:1a00038e 0000000a t exseq_door_OPENING
+projects/garage-project/out/garage-project.elf:1a000398 0000000a t exseq_door_CLOSING
+projects/garage-project/out/garage-project.elf:1a0003a2 0000000a t exseq_warning_light_REPOSO
+projects/garage-project/out/garage-project.elf:1a0003ac 00000008 t react_TEC__entry_Default
+projects/garage-project/out/garage-project.elf:1a0003b4 00000008 t enseq_TEC_default
+projects/garage-project/out/garage-project.elf:1a0003bc 00000008 t react_main_region__entry_Default
+projects/garage-project/out/garage-project.elf:1a0003c4 00000008 t enseq_main_region_default
+projects/garage-project/out/garage-project.elf:1a0003cc 00000004 t react
+projects/garage-project/out/garage-project.elf:1a0003d0 00000026 t TEC_PRESSED_react
+projects/garage-project/out/garage-project.elf:1a0003f6 00000038 t TEC_VALIDATION_react
+projects/garage-project/out/garage-project.elf:1a00042e 0000007a t main_region_WAIT_react
+projects/garage-project/out/garage-project.elf:1a0004a8 00000018 t enact_door_OPENING
+projects/garage-project/out/garage-project.elf:1a0004c0 00000012 t enseq_door_OPENING_default
+projects/garage-project/out/garage-project.elf:1a0004d2 00000008 t react_door__entry_Default
+projects/garage-project/out/garage-project.elf:1a0004da 00000008 t enseq_door_default
+projects/garage-project/out/garage-project.elf:1a0004e2 0000001e t door_CLOSED_react
+projects/garage-project/out/garage-project.elf:1a000500 00000014 t enact_door_CLOSING
+projects/garage-project/out/garage-project.elf:1a000514 00000012 t enseq_door_CLOSING_default
+projects/garage-project/out/garage-project.elf:1a000526 0000000a t enact_door_OPENED
+projects/garage-project/out/garage-project.elf:1a000530 00000012 t enseq_door_OPENED_default
+projects/garage-project/out/garage-project.elf:1a000542 0000002e t door_OPENED_react
+projects/garage-project/out/garage-project.elf:1a000570 00000010 t enact_door_CLOSED
+projects/garage-project/out/garage-project.elf:1a000580 00000012 t enseq_door_CLOSED_default
+projects/garage-project/out/garage-project.elf:1a000592 0000000a t enact_warning_light_REPOSO
+projects/garage-project/out/garage-project.elf:1a00059c 00000012 t enseq_warning_light_REPOSO_default
+projects/garage-project/out/garage-project.elf:1a0005ae 00000008 t react_warning_light__entry_Default
+projects/garage-project/out/garage-project.elf:1a0005b6 00000008 t enseq_warning_light_default
+projects/garage-project/out/garage-project.elf:1a0005be 0000000c t exact_TEC_DEBOUNCE
+projects/garage-project/out/garage-project.elf:1a0005ca 0000000e t exseq_TEC_DEBOUNCE
+projects/garage-project/out/garage-project.elf:1a0005d8 00000026 t TEC_DEBOUNCE_react
+projects/garage-project/out/garage-project.elf:1a0005fe 0000000c t exact_door_CLOSE_TO_OPEN
+projects/garage-project/out/garage-project.elf:1a00060a 00000010 t exseq_door_CLOSE_TO_OPEN
+projects/garage-project/out/garage-project.elf:1a00061a 0000001e t door_CLOSE_TO_OPEN_react
+projects/garage-project/out/garage-project.elf:1a000638 0000000c t exact_door_OPEN_TO_CLOSE
+projects/garage-project/out/garage-project.elf:1a000644 00000010 t exseq_door_OPEN_TO_CLOSE
+projects/garage-project/out/garage-project.elf:1a000654 0000001e t door_OPEN_TO_CLOSE_react
+projects/garage-project/out/garage-project.elf:1a000672 0000000c t exact_warning_light_TITILA_r1_APAGADO
+projects/garage-project/out/garage-project.elf:1a00067e 00000010 t exseq_warning_light_TITILA_r1_APAGADO
+projects/garage-project/out/garage-project.elf:1a00068e 0000000c t exact_warning_light_TITILA_r1_ENCENDIDO
+projects/garage-project/out/garage-project.elf:1a00069a 00000010 t exseq_warning_light_TITILA_r1_ENCENDIDO
+projects/garage-project/out/garage-project.elf:1a0006aa 0000001a t exseq_warning_light_TITILA_r1
+projects/garage-project/out/garage-project.elf:1a0006c4 00000008 t exseq_warning_light_TITILA
+projects/garage-project/out/garage-project.elf:1a0006cc 0000001e t warning_light_TITILA_react
+projects/garage-project/out/garage-project.elf:1a0006ea 00000010 t enact_TEC_DEBOUNCE
+projects/garage-project/out/garage-project.elf:1a0006fa 00000012 t enseq_TEC_DEBOUNCE_default
+projects/garage-project/out/garage-project.elf:1a00070c 00000026 t TEC_UNPRESSED_react
+projects/garage-project/out/garage-project.elf:1a000732 0000001a t enact_door_OPEN_TO_CLOSE
+projects/garage-project/out/garage-project.elf:1a00074c 00000012 t enseq_door_OPEN_TO_CLOSE_default
+projects/garage-project/out/garage-project.elf:1a00075e 0000002e t door_OPENING_react
+projects/garage-project/out/garage-project.elf:1a00078c 0000001a t enact_door_CLOSE_TO_OPEN
+projects/garage-project/out/garage-project.elf:1a0007a6 00000012 t enseq_door_CLOSE_TO_OPEN_default
+projects/garage-project/out/garage-project.elf:1a0007b8 0000003e t door_CLOSING_react
+projects/garage-project/out/garage-project.elf:1a0007f6 0000001a t enact_warning_light_TITILA_r1_APAGADO
+projects/garage-project/out/garage-project.elf:1a000810 00000012 t enseq_warning_light_TITILA_r1_APAGADO_default
+projects/garage-project/out/garage-project.elf:1a000822 0000002a t warning_light_TITILA_r1_ENCENDIDO_react
+projects/garage-project/out/garage-project.elf:1a00084c 00000008 t react_warning_light_TITILA_r1__entry_Default
+projects/garage-project/out/garage-project.elf:1a000854 00000008 t enseq_warning_light_TITILA_r1_default
+projects/garage-project/out/garage-project.elf:1a00085c 00000008 t enseq_warning_light_TITILA_default
+projects/garage-project/out/garage-project.elf:1a000864 0000001e t warning_light_REPOSO_react
+projects/garage-project/out/garage-project.elf:1a000882 0000001c t enact_warning_light_TITILA_r1_ENCENDIDO
+projects/garage-project/out/garage-project.elf:1a00089e 00000012 t enseq_warning_light_TITILA_r1_ENCENDIDO_default
+projects/garage-project/out/garage-project.elf:1a0008b0 0000002c t warning_light_TITILA_r1_APAGADO_react
+projects/garage-project/out/garage-project.elf:1a001da4 00000004 t InitClkStates
+projects/garage-project/out/garage-project.elf:1a001da8 00000074 t pinmuxing
+projects/garage-project/out/garage-project.elf:1a000ae0 00000044 t Board_LED_Init
+projects/garage-project/out/garage-project.elf:1a000b24 00000040 t Board_TEC_Init
+projects/garage-project/out/garage-project.elf:1a000b64 00000040 t Board_GPIO_Init
+projects/garage-project/out/garage-project.elf:1a000ba4 00000030 t Board_ADC_Init
+projects/garage-project/out/garage-project.elf:1a000bd4 00000038 t Board_SPI_Init
+projects/garage-project/out/garage-project.elf:1a000c0c 00000024 t Board_I2C_Init
+projects/garage-project/out/garage-project.elf:1a001e20 00000008 t GpioButtons
+projects/garage-project/out/garage-project.elf:1a001e28 0000000c t GpioLeds
+projects/garage-project/out/garage-project.elf:1a001e34 00000012 t GpioPorts
+projects/garage-project/out/garage-project.elf:1a000cec 000000a0 t pll_calc_divs
+projects/garage-project/out/garage-project.elf:1a000d8c 0000010c t pll_get_frac
+projects/garage-project/out/garage-project.elf:1a000e98 00000048 t Chip_Clock_FindBaseClock
+projects/garage-project/out/garage-project.elf:1a001104 00000022 t Chip_Clock_GetDivRate
+projects/garage-project/out/garage-project.elf:10000038 00000008 b audio_usb_pll_freq
+projects/garage-project/out/garage-project.elf:1a001e54 0000006c t periph_to_base
+projects/garage-project/out/garage-project.elf:1a001270 00000014 t Chip_SSP_GetClockIndex
+projects/garage-project/out/garage-project.elf:1a001284 00000018 t Chip_SSP_GetPeriphClockIndex
+projects/garage-project/out/garage-project.elf:1a001324 0000002c t Chip_UART_GetIndex
+projects/garage-project/out/garage-project.elf:1a001ec0 00000008 t UART_BClock
+projects/garage-project/out/garage-project.elf:1a001ec8 00000008 t UART_PClock
+projects/garage-project/out/garage-project.elf:10000000 00000038 d i2c
+projects/garage-project/out/garage-project.elf:1a001504 00000014 t Chip_ADC_GetClockIndex
+projects/garage-project/out/garage-project.elf:1a001518 00000032 t getClkDiv
+projects/garage-project/out/garage-project.elf:1a001ed0 00000048 t InitClkStates
+projects/garage-project/out/garage-project.elf:10000044 00000024 b statechart
+projects/garage-project/out/garage-project.elf:1a001f18 ? __init_array_end
+projects/garage-project/out/garage-project.elf:1a001f18 ? __preinit_array_end
+projects/garage-project/out/garage-project.elf:1a001f18 ? __init_array_start
+projects/garage-project/out/garage-project.elf:1a001f18 ? __preinit_array_start
+projects/garage-project/out/garage-project.elf:1a000f2c 0000001c T Chip_Clock_GetDividerSource
+projects/garage-project/out/garage-project.elf:10000040 00000001 B SysTick_Time_Flag
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W TIMER2_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000186 00000002 W DebugMon_Handler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W RIT_IRQHandler
+projects/garage-project/out/garage-project.elf:1a080000 A __top_MFlashA512
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W ADCHS_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000114 T __section_table_start
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W FLASH_EEPROM_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W I2C0_IRQHandler
+projects/garage-project/out/garage-project.elf:1a00017c 00000002 W HardFault_Handler
+projects/garage-project/out/garage-project.elf:1a000000 A __vectors_start__
+projects/garage-project/out/garage-project.elf:1a0015be 0000000c T Chip_ADC_SetResolution
+projects/garage-project/out/garage-project.elf:1a001860 0000000c T SysTick_Handler
+projects/garage-project/out/garage-project.elf:1a00175c 00000002 W initialise_monitor_handles
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W SDIO_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W ATIMER_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000188 00000002 W PendSV_Handler
+projects/garage-project/out/garage-project.elf:1a00017a 00000002 W NMI_Handler
+projects/garage-project/out/garage-project.elf:1a001f20 R __exidx_end
+projects/garage-project/out/garage-project.elf:1a000150 T __data_section_table_end
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W I2C1_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W UART1_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W GPIO5_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W CAN1_IRQHandler
+projects/garage-project/out/garage-project.elf:53ff6124 A __valid_user_code_checksum
+projects/garage-project/out/garage-project.elf:1a001f20 R _etext
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W USB1_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W I2S0_IRQHandler
+projects/garage-project/out/garage-project.elf:1a001a10 00000044 T UpdateTimers
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W TIMER3_IRQHandler
+projects/garage-project/out/garage-project.elf:1a0011a8 0000000c T Chip_Clock_GetBaseClocktHz
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W UART0_IRQHandler
+projects/garage-project/out/garage-project.elf:1a0001aa 00000012 T bss_init
+projects/garage-project/out/garage-project.elf:1a0019c2 00000028 T IsPendEvent
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W SGPIO_IRQHandler
+projects/garage-project/out/garage-project.elf:1a0019ea 00000026 T MarkAsAttEvent
+projects/garage-project/out/garage-project.elf:1a001a54 T __aeabi_uldivmod
+projects/garage-project/out/garage-project.elf:100000bc ? _noinit
+projects/garage-project/out/garage-project.elf:10000068 00000004 B SystemCoreClock
+projects/garage-project/out/garage-project.elf:1a001350 00000054 T Chip_UART_Init
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W ADC0_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000182 00000002 W UsageFault_Handler
+projects/garage-project/out/garage-project.elf:1a001224 0000004c T Chip_Clock_GetRate
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W GPIO6_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000a68 0000006c T Board_SetupClocking
+projects/garage-project/out/garage-project.elf:20008000 A __top_RamAHB32
+projects/garage-project/out/garage-project.elf:1a001a84 000002c2 T __udivmoddi4
+projects/garage-project/out/garage-project.elf:1a001e1c 00000004 T ExtRateIn
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W IntDefaultHandler
+projects/garage-project/out/garage-project.elf:1a000300 T __CRP_WORD_END__
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W GPIO1_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W SSP0_IRQHandler
+projects/garage-project/out/garage-project.elf:1a001f18 R __exidx_start
+projects/garage-project/out/garage-project.elf:1a0002fc 00000004 T CRP_WORD
+projects/garage-project/out/garage-project.elf:1a001d4c 00000048 T __libc_init_array
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W ADC1_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000c78 00000030 T Board_Init
+projects/garage-project/out/garage-project.elf:1a0017ea 00000002 W _init
+projects/garage-project/out/garage-project.elf:1a000114 T __data_section_table
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W RTC_IRQHandler
+projects/garage-project/out/garage-project.elf:100000bc B _ebss
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W TIMER0_IRQHandler
+projects/garage-project/out/garage-project.elf:1a001760 00000088 T Reset_Handler
+projects/garage-project/out/garage-project.elf:20010000 A __top_RamAHB_ETB16
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W SPI_IRQHandler
+projects/garage-project/out/garage-project.elf:1a0014c8 0000003c T Chip_I2C_SetClockRate
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W LCD_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000ee0 0000004c T Chip_Clock_EnableCrystal
+projects/garage-project/out/garage-project.elf:10008000 A __top_RamLoc32
+projects/garage-project/out/garage-project.elf:1a00018c 0000001e T data_init
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W TIMER1_IRQHandler
+projects/garage-project/out/garage-project.elf:1a0014a0 00000028 T Chip_I2C_Init
+projects/garage-project/out/garage-project.elf:1a001958 00000034 T SetNewTimerTick
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W UART2_IRQHandler
+projects/garage-project/out/garage-project.elf:1a00109c 00000068 T Chip_Clock_GetMainPLLHz
+projects/garage-project/out/garage-project.elf:1a00129c 00000012 T Chip_SSP_SetClockRate
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W GPIO2_IRQHandler
+projects/garage-project/out/garage-project.elf:1a0008dc 00000022 T garage_init
+projects/garage-project/out/garage-project.elf:1a001180 00000028 T Chip_Clock_GetBaseClock
+projects/garage-project/out/garage-project.elf:10000038 B _bss
+projects/garage-project/out/garage-project.elf:1a00158c 00000032 T Chip_ADC_SetSampleRate
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W I2S1_IRQHandler
+projects/garage-project/out/garage-project.elf:1a0012ae 0000003e T Chip_SSP_SetBitRate
+projects/garage-project/out/garage-project.elf:1a000cd4 00000002 T Chip_GPIO_Init
+projects/garage-project/out/garage-project.elf:1a001e48 00000004 T OscRateIn
+projects/garage-project/out/garage-project.elf:100000bc ? _end_noinit
+projects/garage-project/out/garage-project.elf:10008000 A _vStackTop
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W SSP1_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 T __bss_section_table_end
+projects/garage-project/out/garage-project.elf:1a000a28 00000008 T garageIface_raise_evTecPressed
+projects/garage-project/out/garage-project.elf:1a001d48 00000002 W __aeabi_ldiv0
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W USB0_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W GPIO3_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W SCT_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000f48 0000001c T Chip_Clock_GetDividerDivisor
+projects/garage-project/out/garage-project.elf:1a0002fc T __CRP_WORD_START__
+projects/garage-project/out/garage-project.elf:1a001d94 00000010 T memset
+projects/garage-project/out/garage-project.elf:1a00017e 00000002 W MemManage_Handler
+projects/garage-project/out/garage-project.elf:1a00186c 000000c8 T main
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W WDT_IRQHandler
+projects/garage-project/out/garage-project.elf:1a00198c 00000036 T UnsetTimerTick
+projects/garage-project/out/garage-project.elf:2000c000 A __top_RamAHB16
+projects/garage-project/out/garage-project.elf:1008a000 A __top_RamLoc40
+projects/garage-project/out/garage-project.elf:1a000184 00000002 W SVC_Handler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W GPIO7_IRQHandler
+projects/garage-project/out/garage-project.elf:1a0011b4 0000003c T Chip_Clock_EnableOpts
+projects/garage-project/out/garage-project.elf:1a000f64 000000b8 T Chip_Clock_GetClockInputHz
+projects/garage-project/out/garage-project.elf:1a00101c 00000080 T Chip_Clock_CalcMainPLLValue
+projects/garage-project/out/garage-project.elf:1a001724 00000038 T SystemInit
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W SPIFI_IRQHandler
+projects/garage-project/out/garage-project.elf:1a0017ec 0000000a T garageIface_opSetMotorSt
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W QEI_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000150 T __bss_section_table
+projects/garage-project/out/garage-project.elf:1a0017e8 00000002 W _fini
+projects/garage-project/out/garage-project.elf:1a00154c 00000040 T Chip_ADC_Init
+projects/garage-project/out/garage-project.elf:1a000a30 00000038 T Board_SetupMuxing
+projects/garage-project/out/garage-project.elf:1a00180a 00000026 T Buttons_GetStatus_
+projects/garage-project/out/garage-project.elf:1a0013a4 000000dc T Chip_UART_SetBaudFDR
+projects/garage-project/out/garage-project.elf:1a000a10 00000012 T garage_raiseTimeEvent
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W ETH_IRQHandler
+projects/garage-project/out/garage-project.elf:10000000 ? _end_uninit_RESERVED
+projects/garage-project/out/garage-project.elf:1000006c 00000050 B ticks
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W CAN0_IRQHandler
+projects/garage-project/out/garage-project.elf:1a001934 00000024 T InitTimerTicks
+projects/garage-project/out/garage-project.elf:10000000 D _data
+projects/garage-project/out/garage-project.elf:1a000178 T __section_table_end
+projects/garage-project/out/garage-project.elf:1a0012ec 00000038 T Chip_SSP_Init
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W GINT0_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W DAC_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000c30 00000024 T Board_Debug_Init
+projects/garage-project/out/garage-project.elf:10000038 D _edata
+projects/garage-project/out/garage-project.elf:1a001480 00000020 T Chip_I2C_EventHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W M0SUB_IRQHandler
+projects/garage-project/out/garage-project.elf:1a0015cc 00000158 T Chip_SetupCoreClock
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W GPIO0_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000000 00000040 T g_pfnVectors
+projects/garage-project/out/garage-project.elf:1a000cd8 00000014 T SystemCoreClockUpdate
+projects/garage-project/out/garage-project.elf:1a0017f6 0000000a T garageIface_opSetMotorDir
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W DMA_IRQHandler
+projects/garage-project/out/garage-project.elf:1a00184c 00000014 T garage_unsetTimer
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W EVRT_IRQHandler
+projects/garage-project/out/garage-project.elf:1b080000 A __top_MFlashB512
+projects/garage-project/out/garage-project.elf:1a000ca8 0000002c T Board_TEC_GetStatus
+projects/garage-project/out/garage-project.elf:1a001d48 00000002 W __aeabi_idiv0
+projects/garage-project/out/garage-project.elf:1a0008fe 0000001c T garage_enter
+projects/garage-project/out/garage-project.elf:1a000180 00000002 W BusFault_Handler
+projects/garage-project/out/garage-project.elf:1a0011f0 00000034 T Chip_Clock_Enable
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W UART3_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W MCPWM_IRQHandler
+projects/garage-project/out/garage-project.elf:1a000a22 00000006 T garageIface_raise_evTecNotPressed
+projects/garage-project/out/garage-project.elf:1a000c54 00000024 T Board_LED_Set
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W M0APP_IRQHandler
+projects/garage-project/out/garage-project.elf:1a001800 0000000a T garageIface_opSetLight
+projects/garage-project/out/garage-project.elf:1a00091c 000000f2 T garage_runCycle
+projects/garage-project/out/garage-project.elf:1a000040 000000d4 T g_pfnVendorVectors
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W GINT1_IRQHandler
+projects/garage-project/out/garage-project.elf:1a001128 00000058 T Chip_Clock_SetBaseClock
+projects/garage-project/out/garage-project.elf:1a000178 00000002 W GPIO4_IRQHandler
+projects/garage-project/out/garage-project.elf:1a001830 0000001c T garage_setTimer
+projects/garage-project/out/garage-project.elf:1a000ad4 0000000c T Board_SystemInit

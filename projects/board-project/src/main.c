@@ -1,37 +1,39 @@
 #include "main.h"
 
-#define TICKRATE_HZ  1000
-
-#define LED0_R    0
-#define LED0_G    1
-#define LED0_B    2
-#define LED1      3
-#define LED2      4
-#define LED3      5
-
-
-// Handler para interrupción
-static uint32_t tick_ct = 0;
-void SysTick_Handler(void){  
-	tick_ct += 1;
-	if ((tick_ct % 500) == 0) {
-		Board_LED_Toggle(LED2);
-	}
+void tecInit(){
+	//Configurate SCU
+	ADDR(SCU_BASE_ADDR,TEC0_SCU_ADDR) = TEC0_CONFIG;
+	//Configurate as input
+	ADDR(GPIO_BASE_ADDR,TEC0_GPIO_CONFIG_ADDR) |= TEC0_GPIO_CONFIG_DATA;
 }
 
+void ledInit(){
+	//Configurate SCU
+	ADDR(SCU_BASE_ADDR,LED1_SCU_ADDR) = LED1_CONFIG;
+	//Configurate as input
+	ADDR(GPIO_BASE_ADDR,LED1_GPIO_CONFIG_ADDR) |= LED1_GPIO_CONFIG_DATA;
+}
+
+bool isTecPressed(){
+	// get bit status
+}
+
+void ledSet(bool state){
+	// set bit status
+}
 
 int main(void){
-
-   // Inicialización de la placa con la librería board.h
-	Board_Init();
+	
+	tecInit();
+	ledInit();
    
-   // Configuración de la interrupción SysTick
-	SysTick_Config(SystemCoreClock / TICKRATE_HZ);
-
-   // Main loop
-	while (1) {
-		__WFI();
-	}
+   while(1){
+		if(isTecPressed())
+			ledSet(true);
+		else
+			ledSet(false);
+   }
    
-   return 0;
+   return 0;   
 }
+

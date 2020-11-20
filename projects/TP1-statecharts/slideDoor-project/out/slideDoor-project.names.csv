@@ -1,0 +1,239 @@
+projects/slideDoor-project/out/slideDoor-project.elf:1a000300 00000016 t clearInEvents
+projects/slideDoor-project/out/slideDoor-project.elf:1a000316 0000000a t enact_TEC_PRESSED
+projects/slideDoor-project/out/slideDoor-project.elf:1a000320 0000000a t enseq_TEC_UNPRESSED_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a00032a 00000012 t enseq_TEC_PRESSED_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a00033c 0000000a t enseq_TEC_VALIDATION_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a000346 0000000a t enseq_main_region_WAIT_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a000350 00000008 t exseq_TEC_UNPRESSED
+projects/slideDoor-project/out/slideDoor-project.elf:1a000358 00000008 t exseq_TEC_PRESSED
+projects/slideDoor-project/out/slideDoor-project.elf:1a000360 00000008 t exseq_TEC_VALIDATION
+projects/slideDoor-project/out/slideDoor-project.elf:1a000368 0000000a t exseq_main_region_WAIT
+projects/slideDoor-project/out/slideDoor-project.elf:1a000372 0000000a t exseq_door_CLOSED
+projects/slideDoor-project/out/slideDoor-project.elf:1a00037c 0000000a t exseq_door_OPENING
+projects/slideDoor-project/out/slideDoor-project.elf:1a000386 0000000a t exseq_door_CLOSING
+projects/slideDoor-project/out/slideDoor-project.elf:1a000390 00000008 t react_TEC__entry_Default
+projects/slideDoor-project/out/slideDoor-project.elf:1a000398 00000008 t enseq_TEC_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a0003a0 00000008 t react_main_region__entry_Default
+projects/slideDoor-project/out/slideDoor-project.elf:1a0003a8 00000008 t enseq_main_region_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a0003b0 00000004 t react
+projects/slideDoor-project/out/slideDoor-project.elf:1a0003b4 00000026 t TEC_PRESSED_react
+projects/slideDoor-project/out/slideDoor-project.elf:1a0003da 00000038 t TEC_VALIDATION_react
+projects/slideDoor-project/out/slideDoor-project.elf:1a000412 00000076 t main_region_WAIT_react
+projects/slideDoor-project/out/slideDoor-project.elf:1a000488 00000014 t enact_door_OPENING
+projects/slideDoor-project/out/slideDoor-project.elf:1a00049c 00000012 t enseq_door_OPENING_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a0004ae 00000008 t react_door__entry_Default
+projects/slideDoor-project/out/slideDoor-project.elf:1a0004b6 00000008 t enseq_door_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a0004be 0000001e t door_CLOSED_react
+projects/slideDoor-project/out/slideDoor-project.elf:1a0004dc 00000014 t enact_door_CLOSING
+projects/slideDoor-project/out/slideDoor-project.elf:1a0004f0 00000012 t enseq_door_CLOSING_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a000502 0000000a t enact_door_CLOSED
+projects/slideDoor-project/out/slideDoor-project.elf:1a00050c 00000012 t enseq_door_CLOSED_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a00051e 0000000c t exact_TEC_DEBOUNCE
+projects/slideDoor-project/out/slideDoor-project.elf:1a00052a 0000000e t exseq_TEC_DEBOUNCE
+projects/slideDoor-project/out/slideDoor-project.elf:1a000538 00000026 t TEC_DEBOUNCE_react
+projects/slideDoor-project/out/slideDoor-project.elf:1a00055e 0000000c t exact_door_OPENED
+projects/slideDoor-project/out/slideDoor-project.elf:1a00056a 00000010 t exseq_door_OPENED
+projects/slideDoor-project/out/slideDoor-project.elf:1a00057a 0000000c t exact_door_REOPENING
+projects/slideDoor-project/out/slideDoor-project.elf:1a000586 00000010 t exseq_door_REOPENING
+projects/slideDoor-project/out/slideDoor-project.elf:1a000596 0000001e t door_REOPENING_react
+projects/slideDoor-project/out/slideDoor-project.elf:1a0005b4 00000010 t enact_TEC_DEBOUNCE
+projects/slideDoor-project/out/slideDoor-project.elf:1a0005c4 00000012 t enseq_TEC_DEBOUNCE_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a0005d6 00000026 t TEC_UNPRESSED_react
+projects/slideDoor-project/out/slideDoor-project.elf:1a0005fc 0000001c t enact_door_OPENED
+projects/slideDoor-project/out/slideDoor-project.elf:1a000618 00000012 t enseq_door_OPENED_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a00062a 0000002e t door_OPENED_react
+projects/slideDoor-project/out/slideDoor-project.elf:1a000658 0000001e t door_OPENING_react
+projects/slideDoor-project/out/slideDoor-project.elf:1a000676 0000001a t enact_door_REOPENING
+projects/slideDoor-project/out/slideDoor-project.elf:1a000690 00000012 t enseq_door_REOPENING_default
+projects/slideDoor-project/out/slideDoor-project.elf:1a0006a2 0000002e t door_CLOSING_react
+projects/slideDoor-project/out/slideDoor-project.elf:1a001b4c 00000004 t InitClkStates
+projects/slideDoor-project/out/slideDoor-project.elf:1a001b50 00000074 t pinmuxing
+projects/slideDoor-project/out/slideDoor-project.elf:1a000890 00000044 t Board_LED_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a0008d4 00000040 t Board_TEC_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a000914 00000040 t Board_GPIO_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a000954 00000030 t Board_ADC_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a000984 00000038 t Board_SPI_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a0009bc 00000024 t Board_I2C_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a001bc8 00000008 t GpioButtons
+projects/slideDoor-project/out/slideDoor-project.elf:1a001bd0 0000000c t GpioLeds
+projects/slideDoor-project/out/slideDoor-project.elf:1a001bdc 00000012 t GpioPorts
+projects/slideDoor-project/out/slideDoor-project.elf:1a000a9c 000000a0 t pll_calc_divs
+projects/slideDoor-project/out/slideDoor-project.elf:1a000b3c 0000010c t pll_get_frac
+projects/slideDoor-project/out/slideDoor-project.elf:1a000c48 00000048 t Chip_Clock_FindBaseClock
+projects/slideDoor-project/out/slideDoor-project.elf:1a000eb4 00000022 t Chip_Clock_GetDivRate
+projects/slideDoor-project/out/slideDoor-project.elf:10000038 00000008 b audio_usb_pll_freq
+projects/slideDoor-project/out/slideDoor-project.elf:1a001bfc 0000006c t periph_to_base
+projects/slideDoor-project/out/slideDoor-project.elf:1a001020 00000014 t Chip_SSP_GetClockIndex
+projects/slideDoor-project/out/slideDoor-project.elf:1a001034 00000018 t Chip_SSP_GetPeriphClockIndex
+projects/slideDoor-project/out/slideDoor-project.elf:1a0010d4 0000002c t Chip_UART_GetIndex
+projects/slideDoor-project/out/slideDoor-project.elf:1a001c68 00000008 t UART_BClock
+projects/slideDoor-project/out/slideDoor-project.elf:1a001c70 00000008 t UART_PClock
+projects/slideDoor-project/out/slideDoor-project.elf:10000000 00000038 d i2c
+projects/slideDoor-project/out/slideDoor-project.elf:1a0012b4 00000014 t Chip_ADC_GetClockIndex
+projects/slideDoor-project/out/slideDoor-project.elf:1a0012c8 00000032 t getClkDiv
+projects/slideDoor-project/out/slideDoor-project.elf:1a001c78 00000048 t InitClkStates
+projects/slideDoor-project/out/slideDoor-project.elf:10000044 0000001c b statechart
+projects/slideDoor-project/out/slideDoor-project.elf:1a001cc0 ? __init_array_end
+projects/slideDoor-project/out/slideDoor-project.elf:1a001cc0 ? __preinit_array_end
+projects/slideDoor-project/out/slideDoor-project.elf:1a001cc0 ? __init_array_start
+projects/slideDoor-project/out/slideDoor-project.elf:1a001cc0 ? __preinit_array_start
+projects/slideDoor-project/out/slideDoor-project.elf:1a000cdc 0000001c T Chip_Clock_GetDividerSource
+projects/slideDoor-project/out/slideDoor-project.elf:10000040 00000001 B SysTick_Time_Flag
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W TIMER2_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000186 00000002 W DebugMon_Handler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W RIT_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a080000 A __top_MFlashA512
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W ADCHS_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000114 T __section_table_start
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W FLASH_EEPROM_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W I2C0_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a00017c 00000002 W HardFault_Handler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000000 A __vectors_start__
+projects/slideDoor-project/out/slideDoor-project.elf:1a00136e 0000000c T Chip_ADC_SetResolution
+projects/slideDoor-project/out/slideDoor-project.elf:1a001608 0000000c T SysTick_Handler
+projects/slideDoor-project/out/slideDoor-project.elf:1a00150c 00000002 W initialise_monitor_handles
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W SDIO_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W ATIMER_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000188 00000002 W PendSV_Handler
+projects/slideDoor-project/out/slideDoor-project.elf:1a00017a 00000002 W NMI_Handler
+projects/slideDoor-project/out/slideDoor-project.elf:1a001cc8 R __exidx_end
+projects/slideDoor-project/out/slideDoor-project.elf:1a000150 T __data_section_table_end
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W I2C1_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W UART1_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W GPIO5_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W CAN1_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a0015d8 0000001c T slideDoor_setTimer
+projects/slideDoor-project/out/slideDoor-project.elf:53ff6374 A __valid_user_code_checksum
+projects/slideDoor-project/out/slideDoor-project.elf:1a0007d2 00000006 T slideDoorIface_raise_evTecNotPressed
+projects/slideDoor-project/out/slideDoor-project.elf:1a001cc8 R _etext
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W USB1_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W I2S0_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a0017b8 00000044 T UpdateTimers
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W TIMER3_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000f58 0000000c T Chip_Clock_GetBaseClocktHz
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W UART0_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a0001aa 00000012 T bss_init
+projects/slideDoor-project/out/slideDoor-project.elf:1a00176a 00000028 T IsPendEvent
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W SGPIO_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a001792 00000026 T MarkAsAttEvent
+projects/slideDoor-project/out/slideDoor-project.elf:1a0017fc T __aeabi_uldivmod
+projects/slideDoor-project/out/slideDoor-project.elf:10000094 ? _noinit
+projects/slideDoor-project/out/slideDoor-project.elf:10000060 00000004 B SystemCoreClock
+projects/slideDoor-project/out/slideDoor-project.elf:1a001100 00000054 T Chip_UART_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W ADC0_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000182 00000002 W UsageFault_Handler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000fd4 0000004c T Chip_Clock_GetRate
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W GPIO6_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000818 0000006c T Board_SetupClocking
+projects/slideDoor-project/out/slideDoor-project.elf:20008000 A __top_RamAHB32
+projects/slideDoor-project/out/slideDoor-project.elf:1a0015a6 0000000a T slideDoorIface_opSetMotorDir
+projects/slideDoor-project/out/slideDoor-project.elf:1a00182c 000002c2 T __udivmoddi4
+projects/slideDoor-project/out/slideDoor-project.elf:1a001bc4 00000004 T ExtRateIn
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W IntDefaultHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000300 T __CRP_WORD_END__
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W GPIO1_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W SSP0_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a001cc0 R __exidx_start
+projects/slideDoor-project/out/slideDoor-project.elf:1a0002fc 00000004 T CRP_WORD
+projects/slideDoor-project/out/slideDoor-project.elf:1a001af4 00000048 T __libc_init_array
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W ADC1_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000a28 00000030 T Board_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a00159a 00000002 W _init
+projects/slideDoor-project/out/slideDoor-project.elf:1a000114 T __data_section_table
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W RTC_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:10000094 B _ebss
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W TIMER0_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a001510 00000088 T Reset_Handler
+projects/slideDoor-project/out/slideDoor-project.elf:20010000 A __top_RamAHB_ETB16
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W SPI_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a001278 0000003c T Chip_I2C_SetClockRate
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W LCD_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000c90 0000004c T Chip_Clock_EnableCrystal
+projects/slideDoor-project/out/slideDoor-project.elf:10008000 A __top_RamLoc32
+projects/slideDoor-project/out/slideDoor-project.elf:1a00018c 0000001e T data_init
+projects/slideDoor-project/out/slideDoor-project.elf:1a0007c0 00000012 T slideDoor_raiseTimeEvent
+projects/slideDoor-project/out/slideDoor-project.elf:1a0015f4 00000014 T slideDoor_unsetTimer
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W TIMER1_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a001250 00000028 T Chip_I2C_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a001700 00000034 T SetNewTimerTick
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W UART2_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000e4c 00000068 T Chip_Clock_GetMainPLLHz
+projects/slideDoor-project/out/slideDoor-project.elf:1a00104c 00000012 T Chip_SSP_SetClockRate
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W GPIO2_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000f30 00000028 T Chip_Clock_GetBaseClock
+projects/slideDoor-project/out/slideDoor-project.elf:10000038 B _bss
+projects/slideDoor-project/out/slideDoor-project.elf:1a00133c 00000032 T Chip_ADC_SetSampleRate
+projects/slideDoor-project/out/slideDoor-project.elf:1a0006d0 00000020 T slideDoor_init
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W I2S1_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a00105e 0000003e T Chip_SSP_SetBitRate
+projects/slideDoor-project/out/slideDoor-project.elf:1a000a84 00000002 T Chip_GPIO_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a001bf0 00000004 T OscRateIn
+projects/slideDoor-project/out/slideDoor-project.elf:10000094 ? _end_noinit
+projects/slideDoor-project/out/slideDoor-project.elf:10008000 A _vStackTop
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W SSP1_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 T __bss_section_table_end
+projects/slideDoor-project/out/slideDoor-project.elf:1a000708 000000b6 T slideDoor_runCycle
+projects/slideDoor-project/out/slideDoor-project.elf:1a001af0 00000002 W __aeabi_ldiv0
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W USB0_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W GPIO3_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W SCT_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a0007d8 00000008 T slideDoorIface_raise_evTecPressed
+projects/slideDoor-project/out/slideDoor-project.elf:1a000cf8 0000001c T Chip_Clock_GetDividerDivisor
+projects/slideDoor-project/out/slideDoor-project.elf:1a0002fc T __CRP_WORD_START__
+projects/slideDoor-project/out/slideDoor-project.elf:1a001b3c 00000010 T memset
+projects/slideDoor-project/out/slideDoor-project.elf:1a00017e 00000002 W MemManage_Handler
+projects/slideDoor-project/out/slideDoor-project.elf:1a001614 000000c8 T main
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W WDT_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a001734 00000036 T UnsetTimerTick
+projects/slideDoor-project/out/slideDoor-project.elf:2000c000 A __top_RamAHB16
+projects/slideDoor-project/out/slideDoor-project.elf:1008a000 A __top_RamLoc40
+projects/slideDoor-project/out/slideDoor-project.elf:1a000184 00000002 W SVC_Handler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W GPIO7_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000f64 0000003c T Chip_Clock_EnableOpts
+projects/slideDoor-project/out/slideDoor-project.elf:1a00159c 0000000a T slideDoorIface_opSetMotorSt
+projects/slideDoor-project/out/slideDoor-project.elf:1a000d14 000000b8 T Chip_Clock_GetClockInputHz
+projects/slideDoor-project/out/slideDoor-project.elf:1a0006f0 00000016 T slideDoor_enter
+projects/slideDoor-project/out/slideDoor-project.elf:1a000dcc 00000080 T Chip_Clock_CalcMainPLLValue
+projects/slideDoor-project/out/slideDoor-project.elf:1a0014d4 00000038 T SystemInit
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W SPIFI_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W QEI_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000150 T __bss_section_table
+projects/slideDoor-project/out/slideDoor-project.elf:1a001598 00000002 W _fini
+projects/slideDoor-project/out/slideDoor-project.elf:1a0012fc 00000040 T Chip_ADC_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a0007e0 00000038 T Board_SetupMuxing
+projects/slideDoor-project/out/slideDoor-project.elf:1a0015b0 00000026 T Buttons_GetStatus_
+projects/slideDoor-project/out/slideDoor-project.elf:1a001154 000000dc T Chip_UART_SetBaudFDR
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W ETH_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:10000000 ? _end_uninit_RESERVED
+projects/slideDoor-project/out/slideDoor-project.elf:10000064 00000030 B ticks
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W CAN0_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a0016dc 00000024 T InitTimerTicks
+projects/slideDoor-project/out/slideDoor-project.elf:10000000 D _data
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 T __section_table_end
+projects/slideDoor-project/out/slideDoor-project.elf:1a00109c 00000038 T Chip_SSP_Init
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W GINT0_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W DAC_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a0009e0 00000024 T Board_Debug_Init
+projects/slideDoor-project/out/slideDoor-project.elf:10000038 D _edata
+projects/slideDoor-project/out/slideDoor-project.elf:1a001230 00000020 T Chip_I2C_EventHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W M0SUB_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a00137c 00000158 T Chip_SetupCoreClock
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W GPIO0_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000000 00000040 T g_pfnVectors
+projects/slideDoor-project/out/slideDoor-project.elf:1a000a88 00000014 T SystemCoreClockUpdate
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W DMA_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W EVRT_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1b080000 A __top_MFlashB512
+projects/slideDoor-project/out/slideDoor-project.elf:1a000a58 0000002c T Board_TEC_GetStatus
+projects/slideDoor-project/out/slideDoor-project.elf:1a001af0 00000002 W __aeabi_idiv0
+projects/slideDoor-project/out/slideDoor-project.elf:1a000180 00000002 W BusFault_Handler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000fa0 00000034 T Chip_Clock_Enable
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W UART3_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W MCPWM_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000a04 00000024 T Board_LED_Set
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W M0APP_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000040 000000d4 T g_pfnVendorVectors
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W GINT1_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000ed8 00000058 T Chip_Clock_SetBaseClock
+projects/slideDoor-project/out/slideDoor-project.elf:1a000178 00000002 W GPIO4_IRQHandler
+projects/slideDoor-project/out/slideDoor-project.elf:1a000884 0000000c T Board_SystemInit
