@@ -1,4 +1,4 @@
 
 
 PROGRAM_PATH = projects
-PROGRAM_NAME = microWave-project
+PROGRAM_NAME = TP2
