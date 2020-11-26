@@ -1,63 +1,12 @@
-/* Copyright 2017, Pablo Ridolfi, Juan Esteban Alarcon, Juan Manuel Cruz
- * All rights reserved.
- *
- * This file is part of Workspace.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice,
- *    this list of conditions and the following disclaimer.
- *
- * 2. Redistributions in binary form must reproduce the above copyright notice,
- *    this list of conditions and the following disclaimer in the documentation
- *    and/or other materials provided with the distribution.
- *
- * 3. Neither the name of the copyright holder nor the names of its
- *    contributors may be used to endorse or promote products derived from this
- *    software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- * POSSIBILITY OF SUCH DAMAGE.
- *
- */
- 
-/** @brief This is a simple statechart example using Yakindu Statechart Tool
- * Plug-in (update site: http://updates.yakindu.org/sct/mars/releases/).
- */
-
-/** \addtogroup statechart Simple UML Statechart example.
- ** @{ */
-
-/*==================[inclusions]=============================================*/
 
 #include "main.h"
-
-#include "gpio.h"       // <= sAPI header
-
-/* Include statechart header file. Be sure you run the statechart C code
- * generation tool!
- */
 #include "Application.h"
 #include "TimerTicks.h"
 
 
-/*==================[macros and definitions]=================================*/
+#define TICKRATE_1MS		   (1000)				/* 1000 ticks per second */
+#define TICKRATE_MS			(TICKRATE_1MS)	/* 1000 ticks per second */
 
-#define TICKRATE_1MS	(1)				/* 1000 ticks per second */
-#define TICKRATE_MS		(TICKRATE_1MS)	/* 1000 ticks per second */
-
-
-/*==================[internal data declaration]==============================*/
 
 volatile bool SysTick_Time_Flag = false;
 
@@ -69,16 +18,6 @@ static Application statechart;
 
 TimerTicks ticks[NOF_TIMERS];
 
-
-/*==================[internal functions declaration]=========================*/
-
-/*==================[internal data definition]===============================*/
-
-/*==================[external data definition]===============================*/
-
-/*==================[internal functions definition]==========================*/
-
-/*==================[external functions definition]==========================*/
 
 /*! \file This header defines prototypes for all functions that are required
  *  by the state machine implementation.
@@ -108,10 +47,9 @@ TimerTicks ticks[NOF_TIMERS];
  * @param LEDNumber number of LED
  * @param onoff state machine operation parameter
  */
-
 void applicationIface_opLED( Application* handle, sc_integer LEDNumber, sc_boolean State )
 {
-	gpioWrite(LED_1 + LEDNumber, State );
+	gpioWrite(LEDNumber, State);
 }
 
 
@@ -150,9 +88,7 @@ void application_unsetTimer( Application* handle, const sc_eventid evid )
  * @brief	Hook on Handle interrupt from SysTick timer
  * @return	Nothing
  */
-void myTickHook( void *ptr ){
-
-	/* The sysTick Interrupt Handler only set a Flag */
+void SysTick_Handler(void){
 	SysTick_Time_Flag = true;
 }
 
@@ -163,34 +99,47 @@ void myTickHook( void *ptr ){
  */
 uint32_t Buttons_GetStatus_(void) {
 	uint8_t ret = false;
-	uint32_t idx;
+	uint8_t idx;
 
 	for (idx = 0; idx < 4; ++idx) {
-		if (gpioRead( TEC_1 + idx ) == 0)
+		if (gpioRead( TEC1 + idx ) == 0)
 			ret |= 1 << idx;
 	}
 	return ret;
 }
 
 
+/* COMPLETAR CON LA INICIALIZACIÓN DE LOS LEDs Y LAS TECLAS */
+void Init_LEDs_and_TECs(void){
+	gpioInit(LED1,GPIO_O);
+	gpioInit(LED2,GPIO_O);
+	gpioInit(LED3,GPIO_O);
+	gpioInit(TEC1,GPIO_I_PULLUP);
+	gpioInit(TEC2,GPIO_I_PULLUP);
+	gpioInit(TEC3,GPIO_I_PULLUP);
+	gpioInit(TEC4,GPIO_I_PULLUP);
+	return;
+}
+
+
 /**
- * @brief	main routine for statechart example: EDU-CIAA-NXP - Application
+ * @brief	main routine for statechart example: EDU-CIAA-NXP - Application LED3
  * @return	Function should not exit.
  */
 int main(void)
 {
 	uint32_t i;
-
 	uint32_t BUTTON_Status;
 
+
 	/* Generic Initialization */
-	boardConfig();
+	Board_Init();
+
+	/* LEDs and TECs initilization */
+	Init_LEDs_and_TECs();
 
 	/* Init Ticks counter => TICKRATE_MS */
-	tickConfig( TICKRATE_MS );
-
-	/* Add Tick Hook */
-	tickCallbackSet( myTickHook, (void*)NULL );
+	SysTick_Config(SystemCoreClock / TICKRATE_MS);
 
 	/* Init Timer Ticks */
 	InitTimerTicks( ticks, NOF_TIMERS );

@@ -62,9 +62,9 @@ static sc_boolean LED3_REPOSO_react(Application* handle, const sc_boolean try_tr
 static void clearInEvents(Application* handle);
 static void clearOutEvents(Application* handle);
 
-const sc_integer APPLICATION_APPLICATIONIFACE_LED1 = 3;
-const sc_integer APPLICATION_APPLICATIONIFACE_LED2 = 4;
-const sc_integer APPLICATION_APPLICATIONIFACE_LED3 = 5;
+const sc_integer APPLICATION_APPLICATIONIFACE_LED1 = 0;
+const sc_integer APPLICATION_APPLICATIONIFACE_LED2 = 1;
+const sc_integer APPLICATION_APPLICATIONIFACE_LED3 = 2;
 const sc_boolean APPLICATION_APPLICATIONIFACE_LED_ON = bool_true;
 const sc_boolean APPLICATION_APPLICATIONIFACE_LED_OFF = bool_false;
 const sc_integer APPLICATION_APPLICATIONIFACE_TEC1 = (1 << 0);
