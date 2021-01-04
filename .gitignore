@@ -1,5 +1,7 @@
 .cproject
 .project
 .settings
+.metadata
+.mcuxpress*
 
 projects/*/out/*
