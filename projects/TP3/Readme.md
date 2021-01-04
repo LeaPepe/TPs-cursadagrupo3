@@ -1,1 +1,12 @@
 
+- uartConfig( UART_USB, 115200 ): Configura e inicializa la UART_USB para que se comunique con un baudrate de 115200 Hz
+- adcConfig( ADC_ENABLE ): Configura e inicializa el ADC
+- dacConfig( DAC_ENABLE ): Configura e inicializa el DAC
+- delayConfig( &delay, 500 );
+- muestra = adcRead( CH1 ): Lee el canal 1 del ADC
+- uartReadByte( UART_USB, &dato ): Lee un caracter de la UART
+- uartWriteByte( UART_USB, dato ): Escribe un caracter en la UART
+- uartWriteString( UART_USB, "ADC CH1 value: " ): Escribe un string en la UART
+- dacWrite( DAC, muestra ): Escribe un valor en el DAC
+- uartCallbackSet(UART_USB, UART_RECEIVE, onRx, NULL): Genera un callback en la UART_USB
+- uartInterrupt(UART_USB, true): Habilita las interrupciones por llegada de datos de la UART
