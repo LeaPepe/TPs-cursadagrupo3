@@ -33,9 +33,24 @@ ENFORCE_NOGPL=n
 USE_CMSIS=y
 USE_BOARD=y
 
+# Defines:
+DEFINES=
 
 # Include config.mk file from program
 -include $(PROGRAM_PATH_AND_NAME)/config.mk
+
+DEFINES+=CORE_M4 __USE_NEWLIB BOARD=edu_ciaa_nxp __USE_LPCOPEN CHIP_LPC43XX ARM_MATH_CM4
+
+ifeq ($(USE_FPU),y)
+DEFINES+=__FPU_PRESENT=1U
+else
+DEFINES+=__FPU_PRESENT=OU
+endif
+
+ifeq ($(SEMIHOST),y)
+$(info Using semihosting)
+DEFINES+=USE_SEMIHOST
+endif
 
 # ----------------------------------------------------------------------
 
@@ -96,19 +111,6 @@ ARCH_FLAGS+=-mfloat-abi=hard -mfpu=fpv4-sp-d16
 endif
 
 # Defines:
-DEFINES=CORE_M4 __USE_NEWLIB BOARD=edu_ciaa_nxp __USE_LPCOPEN CHIP_LPC43XX ARM_MATH_CM4
-
-ifeq ($(USE_FPU),y)
-DEFINES+=__FPU_PRESENT=1U
-else
-DEFINES+=__FPU_PRESENT=OU
-endif
-
-ifeq ($(SEMIHOST),y)
-$(info Using semihosting)
-DEFINES+=USE_SEMIHOST
-endif
-
 DEFINES_FLAGS=$(foreach m, $(DEFINES), -D$(m))
 
 # C/C++:
