@@ -111,7 +111,9 @@ Se realizo la libreria casera que inicializa las teclas y leds. Funciones: gpioI
 
 ## Trabajo practico 3 - UART / ADC y DAC
 
-## Funciones de interes
+## Ejercicio 1 - Funciones de interes
+
+Se detallan algunas funciones de interes para la realizacion del trabajo practico
 
 - uartConfig( UART_USB, 115200 ): Configura e inicializa (inicializacion de puertos y configuracion del buffer FIFO y SCU) la UART_USB para que se comunique con un baudrate de 115200 Hz. Para configurar los bits de datos, stop y paridad es necesario redefinir la marco uartConfig a uartInit2.
 
@@ -135,8 +137,6 @@ Se realizo la libreria casera que inicializa las teclas y leds. Funciones: gpioI
 
 - uartInterrupt(UART_USB, true): Habilita las interrupciones por llegada de datos de la UART
 
-
-## Descripcion de los programas
 
 ### Ejercicio 2 - Debounce
 
@@ -182,3 +182,37 @@ Comandos disponibles:
 	COMMAND_LEDB_DEC = 'c'
 } commands_t;
 ```
+
+### Ejercicio 5 - ADC + UART
+
+Se realizo una lectura de la entrada analogica CH1 conectada a un divisor resistivo 2k2//2k2. Se imprime el resultado de la lectura por uart, mostrando:
+
+`ADC CH1 value: 510. Max sample value: 1024`
+
+### Ejercicio 6 - DAC + ADC + UART
+
+Se realizo la escritura del DAC mediante el envio de los caracteres 0 a 9, utilizando la funcion `valueDAC = (uint16_t)(((float)uartCharRx - 48.0)*1024.0/10.0);`
+
+Se observa cada uno de los resultados con los distintos caracteres enviados:
+```
+ADC CH1 value: 0. Max sample value: 1024    // 0
+ADC CH1 value: 101. Max sample value: 1024 
+ADC CH1 value: 203. Max sample value: 1024 
+ADC CH1 value: 306. Max sample value: 1024 
+ADC CH1 value: 408. Max sample value: 1024 
+ADC CH1 value: 511. Max sample value: 1024 
+ADC CH1 value: 613. Max sample value: 1024 
+ADC CH1 value: 715. Max sample value: 1024 
+ADC CH1 value: 818. Max sample value: 1024 
+ADC CH1 value: 920. Max sample value: 1024  // 9
+```
+
+### Ejercicio 7 - UARTS Loopback Ej 2 y 3
+
+
+### Ejercicio 7 - UARTS Loopback 2
+
+##3 Utilizacion para el TPF
+
+Se utilizaran ampliamente estas funcionalidades en el trabajo final. El puerto UART se utilizara para recibir y transmitir datos o comandos hacia el webserver. Por otro lado se utilizaran 2 canales del ADC para leer 
+senales analogicas correspondientes a la tension y corriente normalizada de 0 a 3.3v
