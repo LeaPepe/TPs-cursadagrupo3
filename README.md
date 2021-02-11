@@ -209,8 +209,17 @@ ADC CH1 value: 920. Max sample value: 1024  // 9
 
 ### Ejercicio 7 - UARTS Loopback Ej 2 y 3
 
+Para el punto a, se realiza lo mismo que el ejercicio 2 pero se redirecciona el envio de los mensajes por la uart 232 antes de enviarlo por USB de la siguiente manera:
 
-### Ejercicio 7 - UARTS Loopback 2
+`TECX -> LED -> msg(CIAA) -> Uart232(Tx) -> -/\/\/\- -> Uart232(Rx) -> UartUSB(Tx) -> msg(PC)`
+
+
+Para el punto b, se realiza lo mismo que el ejercicio 3 y es un caso analogo al anterior, con la diferencia que el msg va desde la PC a la CIAA
+
+`comando(PC) -> UartUSB(Rx) -> UartUSB(Tx) -> -/\/\/\- -> Uart232(Rx) -> InterpretarComando(CIAA) -> LED`
+
+
+### Ejercicio 8 - UARTS Loopback 2
 
 ##3 Utilizacion para el TPF
 
